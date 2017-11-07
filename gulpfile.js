@@ -19,14 +19,15 @@ gulp.task("sass", function() {
         .pipe(browserSync.reload({stream: true}));
 });
 
-// gulp.task("scripts", function() {
-//     return gulp.src([
-//         "app/libs/jquery/dist/jquery.min.js",
-//         "app/libs/magnific-popup/dist/jquery.magnific-popup.min.js"])
-//         .pipe(concat("libs.min.js"))
-//         .pipe(uglify())
-//         .pipe(gulp.dest("app/js"));
-// });
+gulp.task("scripts", function() {
+    return gulp.src([
+        "app/libs/jquery/dist/jquery.min.js",
+        "app/libs/bootstrap/dist/js/bootstrap.min.js",
+        "app/libs/owl.carousel/dist/owl.carousel.min.js"])
+        .pipe(concat("libs.min.js"))
+        .pipe(uglify())
+        .pipe(gulp.dest("app/js"));
+});
 
 gulp.task("css-libs", ["sass"], function() {
     return gulp.src("app/css/libs.css")
@@ -63,7 +64,7 @@ gulp.task("img", function() {
         .pipe(gulp.dest("dist/images"));
 });
 
-gulp.task("watch", ["browser-sync", "css-libs"], function() {
+gulp.task("watch", ["browser-sync", "css-libs", "scripts"], function() {
     gulp.watch("app/sass/**/*.sass", ["sass"]);
     gulp.watch("app/*.html", browserSync.reload);
     gulp.watch("app/js/**/*.js", browserSync.reload);
