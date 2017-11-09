@@ -1,0 +1,1168 @@
+$main-color: #fff
+$accent-color: #eec400
+$alter-color: #f8f8f8
+$text-color: #404040
+
+body
+    font-family: 'Roboto-Light', Arial, sans-serif
+
+/* elements */
+
+.btn
+    display: block
+    padding: 28px 62px 28px
+    border: none
+    outline: none
+    border-radius: 6px
+    font-family: "Roboto-Bold"
+    font-size: 18px
+    text-transform: uppercase
+    transition: all .2s ease
+
+.btn--light
+    color: $text-color
+    background-color: $accent-color
+    &:hover
+        color: $main-color
+        background-color: $text-color
+
+.btn--dark
+    color: $main-color
+    background-color: $text-color
+    &:hover
+        color: $text-color
+        background-color: $accent-color
+
+.topText
+    &:before
+        position: relative
+        bottom: 4px
+        right: 18px
+        display: inline-block
+        content: ""
+        width: 155px
+        height: 1px
+        background-color: transparent
+        border-bottom: 1px dashed $text-color
+    &:after
+        position: relative
+        bottom: 4px
+        left: 18px
+        display: inline-block
+        content: ""
+        width: 155px
+        height: 1px
+        background-color: transparent
+        border-bottom: 1px dashed $text-color
+
+/* top wrapper */
+
+.topWrapper
+    background: $main-color url(../images/top_wrapper_bg.jpg) no-repeat center center
+    background-size: cover
+
+.header
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 999
+    width: 100%
+    padding: 54px 0 38px
+    background-color: rgba(0, 0, 0, .9)
+    .logo
+        display: block
+        width: 184px
+        height: 28px
+        margin-top: -9px
+        background: url(../images/logo.png) no-repeat center center
+        background-size: cover
+    .menu
+        padding: 0
+        margin: 0
+        list-style-type: none
+        .menu__item
+            display: table-cell
+            width: 3%
+            a
+                color: $main-color
+                font-family: "Roboto-Regular"
+                font-size: 14px
+                text-transform: uppercase
+                text-decoration: none
+                text-align: center
+                transition: all .3s ease
+        .menu__item.active,
+        .menu__item:hover
+            a
+                font-family: "Roboto-Black"
+                color: $accent-color
+    .menu--add
+        margin-top: 3px
+        .menu__item
+            &:first-child
+                a
+                    width: 10px
+                    height: 12px
+                    background: url(../images/lock_open.png) no-repeat center center
+            a
+                display: block
+                width: 12px
+                height: 12px
+                background: url(../images/zoom.png) no-repeat center center
+                background-size: cover
+
+.hero
+    padding: 270px 0 187px
+    background-color: transparent
+    .hero__title
+        margin: 0
+        line-height: 1
+        color: $main-color
+        font-family: "Roboto-Light"
+        font-size: 36px
+        text-transform: uppercase
+        span
+            font-family: "Roboto-Black"
+            font-size: 104px
+            &:first-child
+                margin-right: 36px
+                color: $accent-color
+    .hero__subtitle
+        margin: 12px 0 30px
+        color: $main-color
+        font-family: "Raleway-Regular"
+        font-size: 36px
+    .hero__text
+        margin: 0 0 36px
+        color: $main-color
+        font-family: "Raleway-Regular"
+        font-size: 14px
+    .btn
+        span
+            margin-left: 16px
+
+/* consult */
+
+.consult
+    padding: 72px 0
+    background: $accent-color url(../images/consult_bg.jpg) no-repeat center center
+    background-size: cover
+    .consult__text
+        margin: 0 0 9px
+        line-height: 1
+        color: $text-color
+        font-family: "Roboto-Black"
+        font-size: 36px
+        text-transform: uppercase
+    .consult__subtext
+        margin: 0
+        line-height: 1
+        color: $text-color
+        font-family: "Raleway-Regular"
+        font-size: 14px
+    .btn
+        margin: -3px 0 0
+        border: 1px solid $text-color
+        span
+            margin-left: 16px
+
+/* welcome */
+
+.welcome
+    padding: 102px 0
+    background-color: $main-color
+    .welcome__topText
+        margin: 0 0 13px
+        color: $text-color
+        font-family: "Roboto-Regular"
+        font-size: 18px
+        text-transform: uppercase
+        text-align: center
+    .welcome__title
+        margin: 0 0 27px
+        color: $text-color
+        font-family: "Roboto-Black"
+        font-size: 36px
+        text-transform: uppercase
+        text-align: center
+        span
+            color: $accent-color
+    .welcome__text
+        margin: 0 0 80px
+        color: $text-color
+        font-family: "Raleway-Regular"
+        font-size: 14px
+        text-align: center
+    .welcomeList
+        padding: 0
+        margin: 0
+        list-style-type: none
+        font-size: 0
+        .welcomeList__item
+            display: inline-block
+            width: 33.3333%
+            padding: 0 15px
+            .welcomeListContent
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                padding: 72px 27px
+                border: 3px solid $accent-color
+                color: $text-color
+                background-color: $main-color
+                transition: all .3s ease
+                &:hover
+                    color: $main-color
+                    background-color: $accent-color
+                    cursor: pointer
+                    a
+                        color: $main-color
+                    svg
+                        fill: $main-color
+                svg
+                    display: block
+                    width: 50px
+                    height: 54px
+                    margin: 0 0 37px
+                    fill: $text-color
+                h3
+                    margin: 0 0 28px
+                    font-family: "Roboto-Black"
+                    font-size: 24px
+                    text-transform: uppercase
+                p
+                    margin: 0 0 19px
+                    font-family: "Raleway-Regular"
+                    font-size: 14px
+                    text-align: center
+                a
+                    display: block
+                    color: $text-color
+                    font-family: "Roboto-Black"
+                    font-size: 18px
+                    text-transform: uppercase
+                    text-decoration: none
+                    span
+                        margin-left: 24px
+            &:nth-child(2)
+                >
+                svg
+                    width: 44px
+                    height: 54px
+            &:nth-child(3)
+                >
+                svg
+                    width: 60px
+                    height: 38px
+                    margin: 16px 0 38px
+
+/* video */
+
+.video
+    position: relative
+    height: 626px
+    overflow-y: hidden
+    video
+        position: absolute
+        min-width: 100%
+        min-height: 100%
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        z-index: -1
+
+/* skills */
+
+.skills
+    padding: 102px 0 60px
+    background-color: $alter-color
+    .skills__topText
+        margin: 0 0 13px
+        color: $text-color
+        font-family: "Roboto-Regular"
+        font-size: 18px
+        text-transform: uppercase
+        text-align: center
+    .skills__title
+        margin: 0 0 103px
+        color: $text-color
+        font-family: "Roboto-Black"
+        font-size: 36px
+        text-transform: uppercase
+        text-align: center
+        span
+            color: $accent-color
+    .skillsList
+        padding: 0
+        margin: 0
+        list-style-type: none
+        font-size: 0
+        .skillsList__item
+            display: inline-block
+            width: 33.3333%
+            padding: 18px 15px 20px
+            margin-bottom: 40px
+            .img
+                display: inline-block
+                width: 19%
+                vertical-align: top
+                img
+                    display: block
+                    max-width: 100%
+                    height: auto
+            .skills__desc
+                display: inline-block
+                width: 81%
+                margin-top: 6px
+                vertical-align: top
+                h3
+                    margin: 0 0 20px
+                    color: $text-color
+                    font-family: "Roboto-Light"
+                    font-size: 18px
+                    text-transform: uppercase
+                    span
+                        font-family: "Roboto-Black"
+                p
+                    margin: 0 0 20px
+                    color: $text-color
+                    font-family: "Raleway-Regular"
+                    font-size: 14px
+
+/* gallery */
+
+.gallery
+    padding: 102px 0
+    background-color: $main-color
+    .gallery__topText
+        margin: 0 0 13px
+        color: $text-color
+        font-family: "Roboto-Regular"
+        font-size: 18px
+        text-transform: uppercase
+        text-align: center
+    .gallery__title
+        margin: 0 0 27px
+        color: $text-color
+        font-family: "Roboto-Black"
+        font-size: 36px
+        text-transform: uppercase
+        text-align: center
+        span
+            color: $accent-color
+    .gallery__text
+        margin: 0 0 60px
+        color: $text-color
+        font-family: "Raleway-Regular"
+        font-size: 14px
+        text-align: center
+    .galleryList
+        padding: 0
+        margin: 0 0 26px
+        list-style-type: none
+        .galleryList__item
+            float: left
+            margin-right: 23px
+            &:last-child
+                margin-right: 0
+            a
+                display: block
+                color: $text-color
+                font-family: "Roboto-Light"
+                font-size: 16px
+                text-decoration: none
+                transition: all .3s ease
+                &:after
+                    display: block
+                    content: ""
+                    width: 100%
+                    height: 1px
+                    margin-top: 5px
+                    background-color: transparent
+        .galleryList__item.active,
+        .galleryList__item:hover
+            a
+                color: $accent-color
+                &:after
+                    background-color: $accent-color
+    .galleryImages
+        padding: 0
+        margin: 0 0 60px
+        list-style-type: none
+        font-size: 0
+        .galleryImages__item
+            position: relative
+            display: inline-block
+            width: 25%
+            height: 400px
+            background-color: $accent-color
+            vertical-align: top
+            cursor: pointer
+            overflow: hidden
+            &:hover
+                img
+                    opacity: .3
+                .galleryCtrl
+                    opacity: 1
+            img
+                display: block
+                width: auto
+                height: 100%
+                transition: opacity .3s ease
+            .galleryCtrl
+                position: absolute
+                top: 0
+                left: 0
+                z-index: 1
+                display: flex
+                justify-content: flex-start
+                align-items: flex-end
+                width: 100%
+                height: 100%
+                opacity: 0
+                transition: opacity .3s ease
+                a
+                    display: block
+                    width: 41px
+                    height: 41px
+                    margin-left: 14px
+                    margin-bottom: 13px
+                    background-size: cover
+                    text-decoration: none
+                .galleryCtrl__zoom
+                    background: url(../images/gallery_zoom.png) no-repeat center center
+                .galleryCtrl__link
+                    background: url(../images/gallery_link.png) no-repeat center center
+    .btn
+        margin-left: -48px
+        span
+            margin-left: 16px
+
+/* statistics */
+
+.statistics
+    padding: 169px 0
+    background: $accent-color url(../images/statistics_bg.jpg) no-repeat center center
+    background-size: cover
+    .statisticsList
+        padding: 0
+        margin: 0
+        list-style-type: none
+        font-size: 0
+        .statisticsList__item
+            display: inline-block
+            width: 25%
+            h3
+                display: inline-block
+                margin-right: 22px
+                color: $text-color
+                font-family: "Roboto-Light"
+                font-size: 48px
+                text-align: left
+                vertical-align: middle
+            p
+                display: inline-block
+                line-height: 1
+                color: $main-color
+                font-family: "Roboto-Black"
+                font-size: 18px
+                text-transform: uppercase
+                white-space: pre-line
+                vertical-align: middle
+
+/* members */
+
+.members
+    padding: 102px 0
+    background-color: $main-color
+    .members__topText
+        margin: 0 0 13px
+        color: $text-color
+        font-family: "Roboto-Regular"
+        font-size: 18px
+        text-transform: uppercase
+        text-align: center
+    .members__title
+        margin: 0 0 27px
+        color: $text-color
+        font-family: "Roboto-Black"
+        font-size: 36px
+        text-transform: uppercase
+        text-align: center
+        span
+            color: $accent-color
+    .members__text
+        margin: 0 0 83px
+        color: $text-color
+        font-family: "Raleway-Regular"
+        font-size: 14px
+        text-align: center
+    .membersList
+        padding: 0
+        margin: 0
+        list-style-type: none
+        font-size: 0
+        .membersList__item
+            position: relative
+            display: inline-block
+            width: 33.3333%
+            padding: 0 31px
+            img
+                position: absolute
+                top: 32px
+                left: 53px
+                z-index: 1
+            .membersFrame
+                position: relative
+                height: 468px
+                border: 20px solid $accent-color
+                transition: all .3s ease
+                .membersContent
+                    > div
+                        margin-left: 20px
+                    position: absolute
+                    top: 0
+                    left: 0
+                    z-index: 1
+                    display: flex
+                    flex-direction: column
+                    justify-content: space-between
+                    align-items: flex-start
+                    width: 100%
+                    height: 100%
+                    opacity: 0
+                    background-color: rgba(238, 196, 0, .9)
+                    h3
+                        color: $main-color
+                        font-family: "Roboto-Black"
+                        font-size: 24px
+                        text-transform: uppercase
+                        span
+                            font-family: "Roboto-Light"
+                    p
+                        color: $text-color
+                        font-family: "Roboto-Light"
+                        font-size: 14px
+                        text-transform: uppercase
+                    .membersSocialList
+                        padding: 0
+                        margin: 0 0 14px 20px
+                        list-style-type: none
+                        li
+                            float: left
+                            margin-right: 10px
+                            &:last-child
+                                margin-right: 0
+                            a
+                                display: block
+                                width: 32px
+                                height: 32px
+                                padding: 8px
+                                border: 1px solid $text-color
+                                border-radius: 50%
+                                color: $text-color
+                                text-decoration: none
+                                text-align: center
+                                span
+                                    font-size: 14px
+            &:hover
+                .membersFrame
+                    border: 20px solid $text-color
+                    .membersContent
+                        opacity: 1
+                img
+                    z-index: 0
+            &:nth-child(2)
+                img
+                    top: 56px
+                    left: -2px
+
+/* testimonials */
+
+.testimonials
+    padding: 102px 0 0
+    background-color: $alter-color
+    .testimonials__topText
+        margin: 0 0 13px
+        color: $text-color
+        font-family: "Roboto-Regular"
+        font-size: 18px
+        text-transform: uppercase
+        text-align: center
+    .testimonials__title
+        margin: 0 0 27px
+        color: $text-color
+        font-family: "Roboto-Black"
+        font-size: 36px
+        text-transform: uppercase
+        text-align: center
+        span
+            color: $accent-color
+    .testimonials__text
+        margin: 0 0 120px
+        color: $text-color
+        font-family: "Raleway-Regular"
+        font-size: 14px
+        text-align: center
+    .testimonials__item
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        align-items: flex-start
+        padding: 48px 137px 48px 103px
+        margin: 0 0 135px
+        background-color: $main-color
+        border-radius: 14px
+        img
+            display: block
+            width: auto
+            height: 100%
+            margin-right: 18px
+        .testimonialsTop
+            display: flex
+            justify-content: space-around
+            align-items: center
+            margin: 0 0 30px
+            > div
+                p
+                    color: $text-color
+                    font-family: "Roboto-Light"
+                    font-size: 12px
+                    text-transform: uppercase
+                    &:first-child
+                        color: $text-color
+                        font-family: "Roboto-Black"
+                        font-size: 18px
+                        text-transform: uppercase
+
+        > p
+            margin: 0 0 17px
+            color: $text-color
+            font-family: "Raleway-Italic"
+            font-size: 14px
+        .testimonials__stars
+            padding: 0
+            margin: 0 0 20px
+            list-style-type: none
+            li
+                float: left
+                margin-right: 5px
+                &:last-child
+                    margin-right: 0
+                span
+                    color: $accent-color
+                    font-size: 14px
+    .clientsList
+        position: relative
+        top: 50px
+        padding: 35px 40px
+        margin: 0
+        background-color: $main-color
+        list-style-type: none
+        font-size: 0
+        box-shadow: 0 7px 29px -17px $text-color
+        .clientsList__item
+            display: inline-block
+            width: 20%
+            text-align: center
+            img
+                display: inline-block
+                max-width: 100%
+                height: auto
+
+/* aboutUs */
+
+.aboutUs
+    padding: 100px 0 73px
+    background-color: $main-color
+    font-size: 0
+    .aboutUs__map
+        display: inline-block
+        width: 50%
+        vertical-align: top
+        img
+            display: block
+            width: 100%
+            height: auto
+    .aboutUs__desc
+        display: inline-block
+        width: 50%
+        padding-left: 30px
+        vertical-align: top
+        .aboutUs__topText
+            margin: 0
+            color: $text-color
+            font-family: "Roboto-Regular"
+            font-size: 18px
+            text-transform: uppercase
+        .aboutUs__title
+            margin: 0 0 27px
+            color: $text-color
+            font-family: "Roboto-Black"
+            font-size: 36px
+            white-space: pre-line
+            text-transform: uppercase
+            span
+                color: $accent-color
+        .aboutUs__text
+            margin: 0 0 78px
+            color: $text-color
+            font-family: "Raleway-Regular"
+            font-size: 14px
+        .btn
+            padding: 18px 42px
+            span
+                margin-left: 16px
+
+/* subscribe */
+
+.subscribe
+    padding: 164px 0
+    background-color: $alter-color
+    position: relative
+    .subscribe__topText
+        color: $text-color
+        margin: 0 0 4px
+        font-family: "Roboto-Regular"
+        font-size: 18px
+        text-transform: uppercase
+        &:after
+            position: relative
+            bottom: 4px
+            left: 18px
+            display: inline-block
+            content: ""
+            width: 270px
+            height: 1px
+            background-color: transparent
+            border-bottom: 1px dashed $text-color
+    .subscribe__title
+        margin: 0
+        color: $text-color
+        font-family: "Roboto-Black"
+        font-size: 36px
+        text-transform: uppercase
+        span
+            color: $accent-color
+
+    form
+        position: relative
+        input
+            width: 100%
+            padding: 18px 178px 18px 15px
+            border: 1px solid $text-color
+            outline: none
+            background-color: transparent
+            font-family: "Raleway-Regular"
+            font-size: 18px
+        .subscribe__btn
+            position: absolute
+            bottom: 2px
+            right: 2px
+            width: 29%
+            padding: 17px 13px
+            border: none
+            border-radius: 4px
+            background-color: $accent-color
+            font-family: "Roboto-Bold"
+            font-size: 18px
+            text-transform: uppercase
+            transition: all .2s ease
+            &:hover
+                color: $main-color
+                background-color: $text-color
+    &:after
+        position: absolute
+        bottom: -28px
+        left: 0
+        content: ""
+        width: 100%
+        height: 28px
+        background: url("../images/subscribe_border.jpg") no-repeat center center
+        background-size: cover
+
+/* price */
+
+.price
+    padding: 128px 0 100px
+    background-color: $main-color
+    .price__topText
+        margin: 0 0 13px
+        color: $text-color
+        font-family: "Roboto-Regular"
+        font-size: 18px
+        text-transform: uppercase
+        text-align: center
+    .price__title
+        margin: 0 0 27px
+        color: $text-color
+        font-family: "Roboto-Black"
+        font-size: 36px
+        text-transform: uppercase
+        text-align: center
+        span
+            color: $accent-color
+    .price__subtitle
+        margin: 0 0 91px
+        color: $text-color
+        font-family: "Raleway-Regular"
+        font-size: 14px
+        text-align: center
+    .priceList
+        padding: 0
+        margin: 0
+        list-style-type: none
+        font-size: 0
+        .priceList__item
+            display: inline-block
+            width: 33.3333%
+            padding: 0 15px
+        .priceItem
+            padding: 60px 0 0
+            box-shadow: 1px 4px 33px -16px $text-color
+            .priceItem__header
+                color: $text-color
+                margin: 0 0 9px
+                font-family: "Roboto-Black"
+                font-size: 24px
+                text-transform: uppercase
+                text-align: center
+            .priceItem__subheader
+                color: $text-color
+                margin: 0 0 27px
+                font-family: "Roboto-Light"
+                font-size: 12px
+                text-transform: uppercase
+                text-align: center
+            .priceItem__price
+                color: $text-color
+                margin: 0
+                font-family: "Roboto-Black"
+                font-size: 30px
+                text-transform: uppercase
+                text-align: center
+                vertical-align: middle
+                span
+                    font-size: 14px
+                    vertical-align: super
+            .priceItem__text
+                color: $text-color
+                margin: 0 0 52px
+                line-height: 3
+                color: $text-color
+                font-family: "Raleway-Regular"
+                font-size: 14px
+                text-align: center
+                white-space: pre-line
+                span
+                    text-decoration: line-through
+            .btn
+                padding: 16px 60px
+                margin: 0 auto
+                border-radius: 6px 6px 0 0
+
+/* news */
+
+.news
+    padding: 100px 0
+    background-color: $alter-color
+    .news__topText
+        margin: 0 0 13px
+        color: $text-color
+        font-family: "Roboto-Regular"
+        font-size: 18px
+        text-transform: uppercase
+        text-align: center
+    .news__title
+        margin: 0 0 27px
+        color: $text-color
+        font-family: "Roboto-Black"
+        font-size: 36px
+        text-transform: uppercase
+        text-align: center
+        span
+            color: $accent-color
+    .news__text
+        margin: 0 0 78px
+        color: $text-color
+        font-family: "Raleway-Regular"
+        font-size: 14px
+        text-align: center
+    .newsList
+        padding: 0
+        margin: 0
+        list-style-type: none
+        font-size: 0
+        .newsList__item
+            display: inline-block
+            width: 33.3333%
+            padding: 0 15px
+            > div
+                background-color: $main-color
+                padding-bottom: 38px
+                img
+                    display: block
+                    width: 100%
+                    height: auto
+                    margin: 0 0 38px
+                .newsHeader
+                    margin: 0 30px 15px
+                    color: $text-color
+                    font-family: "Raleway-Regular"
+                    font-size: 22px
+                .newsDate
+                    margin: 0 30px 28px
+                    color: $text-color
+                    font-family: "Roboto-Light"
+                    font-size: 12px
+                    text-transform: uppercase
+                    span
+                        font-family: "Roboto-Black"
+                        &:nth-child(2)
+                            margin-left: 30px
+                .newsContent
+                    margin: 0 30px 16px
+                    color: $text-color
+                    font-family: "Raleway-Regular"
+                    font-size: 14px
+                a
+                    margin-left: 30px
+                    color: $text-color
+                    font-family: "Roboto-Bold"
+                    font-size: 14px
+                    text-align: center
+                    text-decoration: none
+                    text-transform: uppercase
+
+/* contacts */
+
+.contacts
+    position: relative
+    padding: 407px 0 100px
+    background-color: $alter-color
+    .contactUs
+        position: absolute
+        top: -400px
+        left: 80px
+        z-index: 1
+        padding: 80px 0
+        background-color: $main-color
+        box-shadow: 1px 4px 33px -16px $text-color
+        .contactUs__title
+            margin: 0 0 31px
+            color: $text-color
+            font-family: "Roboto-Black"
+            font-size: 36px
+            text-transform: uppercase
+            span
+                color: $accent-color
+        form
+            > div
+                font-size: 0
+                input
+                    display: inline-block
+                    width: 48%
+                    margin-right: 4%
+                    margin-bottom: 30px
+                    padding: 30px
+                    color: $text-color
+                    background-color: $alter-color
+                    border: 1px solid $text-color
+                    border-radius: 4px
+                    outline: none
+                    font-family: "Raleway-Regular"
+                    font-size: 14px
+                    &:nth-child(2)
+                        margin-right: 0
+            textarea
+                width: 100%
+                height: 226px
+                padding: 30px
+                margin: 0 0 30px
+                border: 1px solid $text-color
+                border-radius: 4px
+                outline: none
+                color: $text-color
+                background-color: $alter-color
+                font-family: "Raleway-Regular"
+                font-size: 14px
+            .btn
+                padding: 24px 82px
+                color: $main-color
+    .contactsList
+        padding: 0
+        margin: 0
+        list-style-type: none
+        font-size: 0
+        .contactsList__item
+            display: inline-block
+            width: 33.3333%
+            padding: 0 15px
+            .contactsItem
+                display: flex
+                justify-content: space-between
+                align-items: flex-start
+                img
+                    display: block
+                    max-width: 100%
+                    height: auto
+                    padding: 20px 14px
+                    border: 1px dashed $accent-color
+                div
+                    margin-left: 30px
+                    p
+                        margin: 0
+                        font-family: "Roboto-Black"
+                        font-size: 24px
+                        text-transform: uppercase
+                        &:nth-child(2)
+                            font-family: "Raleway-Regular"
+                            font-size: 15px
+    &:after
+        position: absolute
+        bottom: -28px
+        left: 0
+        content: ""
+        width: 100%
+        height: 28px
+        background: url("../images/subscribe_border.jpg") no-repeat center center
+        background-size: cover
+
+/* footer */
+
+.footer
+    .footer__top
+        padding: 116px 0 100px
+        background: url(../images/footer_bg.jpg) no-repeat center center
+        background-size: cover
+        .footer__logo
+            display: block
+            width: 184px
+            height: 28px
+            margin: 0 0 40px
+            background: url(../images/footer_logo.png) no-repeat center center
+            background-size: cover
+        .footer__text
+            margin: 0 0 32px
+            color: $main-color
+            font-family: "Raleway-LightItalic"
+            font-size: 14px
+        .footerServices
+            h2
+                margin: 0 0 38px
+                color: $main-color
+                font-family: "Roboto-Black"
+                font-size: 24px
+                text-transform: uppercase
+            ul
+                padding: 0
+                margin: 0
+                list-style-type: none
+                li
+                    margin-bottom: 18px
+                    background: url(../images/list_arrow.png) no-repeat 0 5px
+                    a
+                        margin-left: 22px
+                        color: $main-color
+                        font-family: "Raleway-Regular"
+                        font-size: 14px
+        .footerTweets
+            h2
+                margin: 0 0 38px
+                color: $main-color
+                font-family: "Roboto-Black"
+                font-size: 24px
+                text-transform: uppercase
+            ul
+                padding: 0
+                margin: 0
+                list-style-type: none
+                li
+                    margin-bottom: 18px
+                    background: url(../images/list_twitter.png) no-repeat 0 5px
+                    a
+                        display: block
+                        margin-left: 35px
+                        p
+                            margin: 0 0 20px
+                            color: $main-color
+                            font-family: "Raleway-Light"
+                            font-size: 14px
+                            span
+                                color: $accent-color
+                            &:nth-child(2)
+                                font-family: "Raleway-Bold"
+        .footerContacts
+            h2
+                margin: 0 0 38px
+                color: $main-color
+                font-family: "Roboto-Black"
+                font-size: 24px
+                text-transform: uppercase
+            .office
+                p
+                    color: $accent-color
+                    font-family: "Raleway-ExtraBold"
+                    font-size: 18px
+                    text-transform: uppercase
+                    &:nth-child(2)
+                        margin: 0 0 15px
+                        color: $main-color
+                        font-family: "Raleway-Regular"
+                        font-size: 14px
+            .phone
+                p
+                    color: $accent-color
+                    font-family: "Raleway-ExtraBold"
+                    font-size: 18px
+                    text-transform: uppercase
+                ul
+                    padding: 0
+                    margin: 0
+                    list-style-type: none
+                    li
+                        float: left
+                        margin-right: 30px
+                        margin-bottom: 30px
+                        color: $main-color
+                        font-family: "Raleway-Regular"
+                        font-size: 14px
+                        &:last-child
+                            margin-right: 0
+            .socialList
+                padding: 0
+                margin: 0
+                list-style-type: none
+                li
+                    float: left
+                    margin-right: 15px
+                    a
+                        display: block
+                        width: 36px
+                        height: 36px
+                        line-height: 33px
+                        border: 2px solid $main-color
+                        border-radius: 50%
+                        color: $main-color
+                        text-align: center
+                        span
+                            font-size: 14px
+                    &:hover
+                        a
+                            color: $text-color
+                            background-color: $main-color
+    .footer__bottom
+        padding: 25px 0
+        background-color: #2f2f2f
+        text-align: center
+        p
+            color: $main-color
+            font-family: "Roboto-Light"
+            font-size: 12px
+            text-transform: uppercase
+            a
+                color: $accent-color
+                font-family: "Roboto-Bold"
+                text-decoration: none
