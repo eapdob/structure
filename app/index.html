@@ -15,11 +15,16 @@
     <header class="header">
         <div class="container">
             <div class="row">
-                <div class="col-md-2">
+                <div class="col-xs-9 col-sm-11 col-md-2">
                     <a href="#" class="logo"></a>
                 </div>
-                <div class="col-md-offset-3 col-md-6">
-                    <nav>
+                <div class="col-xs-3 col-sm-1 col-md-offset-3 col-md-7">
+                    <div class="menuToggle" data-toggle=".mobileMenu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <nav class="header__nav">
                         <ul class="menu clearfix">
                             <li class="menu__item active"><a href="#hero">Home</a></li>
                             <li class="menu__item"><a href="#aboutUs">About</a></li>
@@ -29,35 +34,72 @@
                             <li class="menu__item"><a href="#price">Price</a></li>
                             <li class="menu__item"><a href="#news">News</a></li>
                             <li class="menu__item"><a href="#contact">Contact</a></li>
+                            <li class="menu__item login"><a href="#"></a></li>
+                            <li class="menu__item search"><a href="#"></a></li>
                         </ul>
                     </nav>
                 </div>
-                <div class="col-md-1">
-                    <nav>
-                        <ul class="menu menu--add clearfix">
-                            <li class="menu__item"><a href="#"></a></li>
-                            <li class="menu__item"><a href="#"></a></li>
-                        </ul>
-                    </nav>
-                </div>
+                <div class="mobileMenu"></div>
             </div>
         </div>
     </header>
     <div class="hero" id="hero">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8">
-                    <h1 class="hero__title">
-                        We build your
-                        <span>dream</span><span>house</span>
-                    </h1>
-                    <p class="hero__subtitle">Fast &amp; save construction</p>
-                    <p class="hero__text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.
-                        Ut quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    </p>
-                    <button class="btn btn--light">Get a quote<span class="fa fa-long-arrow-right"></span></button>
+        <div class="heroSlider owl-carousel">
+            <div class="heroItem">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-8">
+                            <h1 class="hero__title">
+                                We build your
+                                <span>dream</span><span>house</span>
+                            </h1>
+                            <p class="hero__subtitle">Fast &amp; save construction</p>
+                            <p class="hero__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua.
+                                Ut quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                            <button class="btn btn--light">Get a quote<span class="fa fa-long-arrow-right"></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="heroItem">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-8">
+                            <h1 class="hero__title">
+                                We build your
+                                <span>dream</span><span>house</span>
+                            </h1>
+                            <p class="hero__subtitle">Fast &amp; save construction</p>
+                            <p class="hero__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua.
+                                Ut quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                            <button class="btn btn--light">Get a quote<span class="fa fa-long-arrow-right"></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="heroItem">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-8">
+                            <h1 class="hero__title">
+                                We build your
+                                <span>dream</span><span>house</span>
+                            </h1>
+                            <p class="hero__subtitle">Fast &amp; save construction</p>
+                            <p class="hero__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua.
+                                Ut quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                            <button class="btn btn--light">Get a quote<span class="fa fa-long-arrow-right"></span></button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -67,7 +109,7 @@
     <div class="consult">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-xs-12 col-sm-12 col-md-6">
                     <p class="consult__text">
                         Need to consult with us?
                     </p>
@@ -75,7 +117,7 @@
                         Ut quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </p>
                 </div>
-                <div class="col-md-offset-3 col-md-3">
+                <div class="col-xs-12 col-sm-12 col-md-offset-3 col-md-3">
                     <button class="btn btn--dark">Contact us<span class="fa fa-long-arrow-right"></span></button>
                 </div>
             </div>
@@ -84,7 +126,7 @@
     <section class="welcome">
         <div class="container">
             <div class="row">
-                <div class="col-md-offset-3 col-md-6">
+                <div class="col-xs-12 col-sm-12 col-md-offset-2 col-md-8">
                     <p class="welcome__topText topText">
                         You are most
                     </p>
@@ -94,7 +136,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-offset-2 col-md-8">
+                <div class="col-xs-12 col-sm-12 col-md-offset-2 col-md-8">
                     <p class="welcome__text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna
@@ -103,7 +145,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-xs-12 col-sm-12 col-md-12">
                     <ul class="welcomeList">
                         <li class="welcomeList__item">
                             <div class="welcomeListContent">
@@ -165,20 +207,20 @@
         </div>
     </section>
     <div class="video">
-        <video autoplay="autoplay" loop="loop">
+        <video autoplay="autoplay" loop="loop" style="width:100%">
             <source src="http://taxify.co/wp-content/uploads/2014/06/file.mp4" type="video/mp4"/>
         </video>
     </div>
     <section class="skills" id="skills">
         <div class="container">
             <div class="row">
-                <div class="col-md-offset-3 col-md-6">
+                <div class="col-xs-12 col-sm-12 col-md-offset-2 col-md-8">
                     <p class="skills__topText topText">We are skilled for</p>
                     <h2 class="skills__title">What <span>we are offering</span></h2>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-xs-12 col-sm-12 col-md-12">
                     <ul class="skillsList">
                         <li class="skillsList__item">
                             <div class="img">
@@ -248,13 +290,13 @@
     <section class="gallery" id="gallery">
         <div class="container">
             <div class="row">
-                <div class="col-md-offset-3 col-md-6">
+                <div class="col-xs-12 col-sm-12 col-md-offset-2 col-md-8">
                     <p class="gallery__topText topText">Our projects</p>
                     <h2 class="gallery__title">View our <span>projects gallery</span></h2>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-offset-2 col-md-8">
+                <div class="col-xs-12 col-sm-12 col-md-offset-2 col-md-8">
                     <p class="gallery__text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna
@@ -263,51 +305,79 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-offset-3 col-md-6">
+                <div class="col-xs-12 col-sm-12 col-md-offset-3 col-md-7">
                     <ul class="galleryList clearfix">
-                        <li class="galleryList__item active"><a href="#">All</a></li>
-                        <li class="galleryList__item"><a href="#">Constructions</a></li>
-                        <li class="galleryList__item"><a href="#">Architecture</a></li>
-                        <li class="galleryList__item"><a href="#">Building</a></li>
-                        <li class="galleryList__item"><a href="#">Interior</a></li>
-                        <li class="galleryList__item"><a href="#">Renovetion</a></li>
+                        <li class="filter galleryList__item active" data-filter="all"><span>All</span></li>
+                        <li class="filter galleryList__item" data-filter=".category-1"><span>Constructions</span></li>
+                        <li class="filter galleryList__item" data-filter=".category-2"><span>Architecture</span></li>
+                        <li class="filter galleryList__item" data-filter=".category-3"><span>Building</span></li>
+                        <li class="filter galleryList__item" data-filter=".category-4"><span>Interior</span></li>
+                        <li class="filter galleryList__item" data-filter=".category-5"><span>Renovetion</span></li>
                     </ul>
                 </div>
             </div>
         </div>
-        <ul class="galleryImages">
-            <li class="galleryImages__item">
+        <div class="galleryImagesGrid" id="galleryImagesGrid">
+            <div class="mix galleryImagesItem category-1">
                 <img src="images/gallery_item_1.jpg" alt="gallery 1">
                 <div class="galleryCtrl">
                     <a href="#" class="galleryCtrl__zoom"></a>
                     <a href="#" class="galleryCtrl__link"></a>
                 </div>
-            </li>
-            <li class="galleryImages__item">
+            </div>
+            <div class="mix galleryImagesItem category-2">
                 <img src="images/gallery_item_2.jpg" alt="gallery 2">
                 <div class="galleryCtrl">
                     <a href="#" class="galleryCtrl__zoom"></a>
                     <a href="#" class="galleryCtrl__link"></a>
                 </div>
-            </li>
-            <li class="galleryImages__item">
+            </div>
+            <div class="mix galleryImagesItem category-3">
                 <img src="images/gallery_item_3.jpg" alt="gallery 3">
                 <div class="galleryCtrl">
                     <a href="#" class="galleryCtrl__zoom"></a>
                     <a href="#" class="galleryCtrl__link"></a>
                 </div>
-            </li>
-            <li class="galleryImages__item">
+            </div>
+            <div class="mix galleryImagesItem category-4">
                 <img src="images/gallery_item_4.jpg" alt="gallery 4">
                 <div class="galleryCtrl">
                     <a href="#" class="galleryCtrl__zoom"></a>
                     <a href="#" class="galleryCtrl__link"></a>
                 </div>
-            </li>
-        </ul>
+            </div>
+            <div class="mix galleryImagesItem category-5">
+                <img src="images/gallery_item_3.jpg" alt="gallery 3">
+                <div class="galleryCtrl">
+                    <a href="#" class="galleryCtrl__zoom"></a>
+                    <a href="#" class="galleryCtrl__link"></a>
+                </div>
+            </div>
+            <div class="mix galleryImagesItem category-4">
+                <img src="images/gallery_item_4.jpg" alt="gallery 4">
+                <div class="galleryCtrl">
+                    <a href="#" class="galleryCtrl__zoom"></a>
+                    <a href="#" class="galleryCtrl__link"></a>
+                </div>
+            </div>
+            <div class="mix galleryImagesItem category-2">
+                <img src="images/gallery_item_1.jpg" alt="gallery 1">
+                <div class="galleryCtrl">
+                    <a href="#" class="galleryCtrl__zoom"></a>
+                    <a href="#" class="galleryCtrl__link"></a>
+                </div>
+            </div>
+            <div class="mix galleryImagesItem category-3">
+                <img src="images/gallery_item_3.jpg" alt="gallery 3">
+                <div class="galleryCtrl">
+                    <a href="#" class="galleryCtrl__zoom"></a>
+                    <a href="#" class="galleryCtrl__link"></a>
+                </div>
+            </div>
+        </div>
         <div class="container">
             <div class="row">
-                <div class="col-md-offset-5 col-md-2">
+                <div class="col-xs-12 col-sm-12 col-md-offset-4 col-md-4">
                     <button class="btn btn--light">See all works<span class="fa fa-long-arrow-right"></span></button>
                 </div>
             </div>
@@ -316,35 +386,43 @@
     <div class="statistics">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <ul class="statisticsList">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <ul class="statisticsList cleafix">
                         <li class="statisticsList__item">
-                            <h3>7260</h3>
-                            <p>
-                                projects
-                                done
-                            </p>
+                            <div>
+                                <h3>7260</h3>
+                                <p>
+                                    projects
+                                    done
+                                </p>
+                            </div>
                         </li>
                         <li class="statisticsList__item">
-                            <h3>2480</h3>
-                            <p>
-                                creative
-                                materials
-                            </p>
+                            <div>
+                                <h3>2480</h3>
+                                <p>
+                                    creative
+                                    materials
+                                </p>
+                            </div>
                         </li>
                         <li class="statisticsList__item">
-                            <h3>270</h3>
-                            <p>
-                                experienced
-                                masters
-                            </p>
+                            <div>
+                                <h3>270</h3>
+                                <p>
+                                    experienced
+                                    masters
+                                </p>
+                            </div>
                         </li>
                         <li class="statisticsList__item">
-                            <h3>2550</h3>
-                            <p>
-                                professional
-                                awards
-                            </p>
+                            <div>
+                                <h3>2550</h3>
+                                <p>
+                                    professional
+                                    awards
+                                </p>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -354,7 +432,7 @@
     <section class="members" id="members">
         <div class="container">
             <div class="row">
-                <div class="col-md-offset-3 col-md-6">
+                <div class="col-xs-12 col-sm-12 col-md-offset-2 col-md-8">
                     <p class="members__topText topText">
                         We have creative
                     </p>
@@ -364,16 +442,16 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-offset-3 col-md-6">
+                <div class="col-xs-12 col-sm-12 col-md-offset-3 col-md-6">
                     <p class="members__text">
                         Dolore magna Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
                     </p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12">
-                    <ul class="membersList">
-                        <li class="membersList__item">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="membersList membersSlider owl-carousel">
+                        <div class="membersList__item">
                             <img src="images/members_1.png" alt="member 1">
                             <div class="membersFrame">
                                 <div class="membersContent">
@@ -389,8 +467,8 @@
                                     </ul>
                                 </div>
                             </div>
-                        </li>
-                        <li class="membersList__item">
+                        </div>
+                        <div class="membersList__item master">
                             <img src="images/members_2.png" alt="member 2">
                             <div class="membersFrame">
                                 <div class="membersContent">
@@ -406,8 +484,8 @@
                                     </ul>
                                 </div>
                             </div>
-                        </li>
-                        <li class="membersList__item">
+                        </div>
+                        <div class="membersList__item">
                             <img src="images/members_3.png" alt="member 3">
                             <div class="membersFrame">
                                 <div class="membersContent">
@@ -423,8 +501,59 @@
                                     </ul>
                                 </div>
                             </div>
-                        </li>
-                    </ul>
+                        </div>
+                        <div class="membersList__item">
+                            <img src="images/members_1.png" alt="member 1">
+                            <div class="membersFrame">
+                                <div class="membersContent">
+                                    <div>
+                                        <h3>Devid <span>veone</span></h3>
+                                        <p>Sr.architect</p>
+                                    </div>
+                                    <ul class="membersSocialList clearfix">
+                                        <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                                        <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                                        <li><a href="#"><span class="fa fa-tumblr"></span></a></li>
+                                        <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="membersList__item master">
+                            <img src="images/members_2.png" alt="member 1">
+                            <div class="membersFrame">
+                                <div class="membersContent">
+                                    <div>
+                                        <h3>Devid <span>veone</span></h3>
+                                        <p>Sr.architect</p>
+                                    </div>
+                                    <ul class="membersSocialList clearfix">
+                                        <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                                        <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                                        <li><a href="#"><span class="fa fa-tumblr"></span></a></li>
+                                        <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="membersList__item">
+                            <img src="images/members_1.png" alt="member 1">
+                            <div class="membersFrame">
+                                <div class="membersContent">
+                                    <div>
+                                        <h3>Devid <span>veone</span></h3>
+                                        <p>Sr.architect</p>
+                                    </div>
+                                    <ul class="membersSocialList clearfix">
+                                        <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                                        <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                                        <li><a href="#"><span class="fa fa-tumblr"></span></a></li>
+                                        <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -432,7 +561,7 @@
     <section class="testimonials">
         <div class="container">
             <div class="row">
-                <div class="col-md-offset-3 col-md-6">
+                <div class="col-xs-12 col-sm-12 col-md-offset-2 col-md-8">
                     <p class="testimonials__topText topText">Clients feedback</p>
                     <h2 class="testimonials__title">Client <span>testimonials</span></h2>
                     <p class="testimonials__text">Dolore magna Quis nostrud exercitation ullamco laboris nisi ut aliquip
@@ -440,68 +569,138 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-offset-3 col-md-7">
-                    <div class="testimonials__item">
-                        <div class="testimonialsTop">
-                            <img src="images/testimonials_man.png" alt="testimonials">
-                            <div>
-                                <p>Paul Irish</p>
-                                <p>Creative director</p>
+                <div class="col-xs-12 col-sm-12 col-md-offset-3 col-md-7">
+                    <div class="testimonialsList">
+                        <div class="testimonials__item">
+                            <div class="testimonialsTop">
+                                <img src="images/testimonials_man.png" alt="testimonials">
+                                <div>
+                                    <p>Paul Irish</p>
+                                    <p>Creative director</p>
+                                </div>
                             </div>
+                            <p>It is a long established fact that a reader will be distracted readable content of a page
+                                when looking at its layout. The point of using rem
+                                Ipsum is that it has a look like readable English.</p>
+                            <ul class="testimonials__stars clearfix">
+                                <li><span class="fa fa-star"></span></li>
+                                <li><span class="fa fa-star"></span></li>
+                                <li><span class="fa fa-star"></span></li>
+                                <li><span class="fa fa-star"></span></li>
+                                <li><span class="fa fa-star"></span></li>
+                            </ul>
+                            <img src="images/testimonials_sign.png" alt="testimonials sign" class="testimonials__sign">
                         </div>
-                        <p>It is a long established fact that a reader will be distracted readable content of a page
-                            when looking at its layout. The point of using rem
-                            Ipsum is that it has a look like readable English.</p>
-                        <ul class="testimonials__stars clearfix">
-                            <li><span class="fa fa-star"></span></li>
-                            <li><span class="fa fa-star"></span></li>
-                            <li><span class="fa fa-star"></span></li>
-                            <li><span class="fa fa-star"></span></li>
-                            <li><span class="fa fa-star"></span></li>
-                        </ul>
-                        <img src="images/testimonials_sign.png" alt="testimonials sign" class="testimonials__sign">
+                        <div class="testimonials__item">
+                            <div class="testimonialsTop">
+                                <img src="images/testimonials_man.png" alt="testimonials">
+                                <div>
+                                    <p>Paul Irish</p>
+                                    <p>Creative director</p>
+                                </div>
+                            </div>
+                            <p>It is a long established fact that a reader will be distracted readable content of a page
+                                when looking at its layout. The point of using rem
+                                Ipsum is that it has a look like readable English.</p>
+                            <ul class="testimonials__stars clearfix">
+                                <li><span class="fa fa-star"></span></li>
+                                <li><span class="fa fa-star"></span></li>
+                                <li><span class="fa fa-star"></span></li>
+                                <li><span class="fa fa-star"></span></li>
+                                <li><span class="fa fa-star"></span></li>
+                            </ul>
+                            <img src="images/testimonials_sign.png" alt="testimonials sign" class="testimonials__sign">
+                        </div>
+                        <div class="testimonials__item">
+                            <div class="testimonialsTop">
+                                <img src="images/testimonials_man.png" alt="testimonials">
+                                <div>
+                                    <p>Paul Irish</p>
+                                    <p>Creative director</p>
+                                </div>
+                            </div>
+                            <p>It is a long established fact that a reader will be distracted readable content of a page
+                                when looking at its layout. The point of using rem
+                                Ipsum is that it has a look like readable English.</p>
+                            <ul class="testimonials__stars clearfix">
+                                <li><span class="fa fa-star"></span></li>
+                                <li><span class="fa fa-star"></span></li>
+                                <li><span class="fa fa-star"></span></li>
+                                <li><span class="fa fa-star"></span></li>
+                                <li><span class="fa fa-star"></span></li>
+                            </ul>
+                            <img src="images/testimonials_sign.png" alt="testimonials sign" class="testimonials__sign">
+                        </div>
+                        <div class="testimonials__item">
+                            <div class="testimonialsTop">
+                                <img src="images/testimonials_man.png" alt="testimonials">
+                                <div>
+                                    <p>Paul Irish</p>
+                                    <p>Creative director</p>
+                                </div>
+                            </div>
+                            <p>It is a long established fact that a reader will be distracted readable content of a page
+                                when looking at its layout. The point of using rem
+                                Ipsum is that it has a look like readable English.</p>
+                            <ul class="testimonials__stars clearfix">
+                                <li><span class="fa fa-star"></span></li>
+                                <li><span class="fa fa-star"></span></li>
+                                <li><span class="fa fa-star"></span></li>
+                                <li><span class="fa fa-star"></span></li>
+                                <li><span class="fa fa-star"></span></li>
+                            </ul>
+                            <img src="images/testimonials_sign.png" alt="testimonials sign" class="testimonials__sign">
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12">
-                    <ul class="clientsList">
-                        <li class="clientsList__item"><img src="images/clients_item_1.png" alt="client 1"></li>
-                        <li class="clientsList__item"><img src="images/clients_item_2.png" alt="client 2"></li>
-                        <li class="clientsList__item"><img src="images/clients_item_3.png" alt="client 3"></li>
-                        <li class="clientsList__item"><img src="images/clients_item_4.png" alt="client 4"></li>
-                        <li class="clientsList__item"><img src="images/clients_item_5.png" alt="client 5"></li>
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <ul class="testimonialsLogosList">
+                        <li class="testimonialsLogosList__item"><img src="images/clients_item_1.png" alt="client 1"></li>
+                        <li class="testimonialsLogosList__item"><img src="images/clients_item_2.png" alt="client 2"></li>
+                        <li class="testimonialsLogosList__item"><img src="images/clients_item_3.png" alt="client 3"></li>
+                        <li class="testimonialsLogosList__item"><img src="images/clients_item_4.png" alt="client 4"></li>
+                        <li class="testimonialsLogosList__item"><img src="images/clients_item_5.png" alt="client 5"></li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
     <section class="aboutUs" id="aboutUs">
-        <div class="aboutUs__map">
-            <img src="images/map_bg.png" alt="map">
-        </div>
-        <div class="aboutUs__desc">
-            <p class="aboutUs__topText">We are everywhere</p>
-            <h2 class="aboutUs__title">We provide extended
-                warranties from <span>leading
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6">
+                    <div class="aboutUs__map">
+                        <img src="images/map_bg.png" alt="map">
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6">
+                    <div class="aboutUs__desc">
+                        <p class="aboutUs__topText">We are everywhere</p>
+                        <h2 class="aboutUs__title">We provide extended
+                            warranties from <span>leading
                 industry suppliers</span>
-            </h2>
-            <p class="aboutUs__text">
-                There are many variations of passages of Lorem Ipsum available, but the majority
-                have suffered alteration in some form, by injected humour, or randomised words which don't look even
-                variation passages slightly believable.
-            </p>
-            <button class="btn btn--light">About us<span class="fa fa-long-arrow-right"></span></button>
+                        </h2>
+                        <p class="aboutUs__text">
+                            There are many variations of passages of Lorem Ipsum available, but the majority
+                            have suffered alteration in some form, by injected humour, or randomised words which don't look even
+                            variation passages slightly believable.
+                        </p>
+                        <button class="btn btn--light">About us<span class="fa fa-long-arrow-right"></span></button>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <section class="subscribe">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <p class="subscribe__topText">Want to get up to date</p>
+                <div class="col-xs-12 col-sm-12 col-md-6">
+                    <p class="subscribe__topText topText">Want to get up to date</p>
                     <h2 class="subscribe__title">Subscribe our <span>newsletter</span></h2>
                 </div>
-                <div class="col-md-6">
+                <div class="col-xs-12 col-sm-12 col-md-6">
                     <form action="#">
                         <input type="text" placeholder="Enter Your Email..." name="email">
                         <input type="submit" value="subscribe" class="subscribe__btn">
@@ -513,7 +712,7 @@
     <section class="price" id="price">
         <div class="container">
             <div class="row">
-                <div class="col-md-offset-3 col-md-6">
+                <div class="col-xs-12 col-sm-12 col-md-offset-3 col-md-6">
                     <p class="price__topText topText">We offer our</p>
                     <h2 class="price__title">Best <span>pricing plan</span></h2>
                     <p class="price__subtitle">
@@ -523,60 +722,62 @@
                 </div>
             </div>
             <div class="row">
-                <ul class="priceList">
-                    <li class="priceList__item">
-                        <div class="priceItem">
-                            <p class="priceItem__header">Starter</p>
-                            <p class="priceItem__subheader">Suitable for starter</p>
-                            <p class="priceItem__price">$ 199.<span>99</span></p>
-                            <p class="priceItem__text">
-                                Construction Consulting
-                                Concrete Construction
-                                Design Build
-                                <span>24/7 Customer Support</span>
-                                <span>Home Loan Help</span>
-                            </p>
-                            <button class="btn btn--dark">Sign up</button>
-                        </div>
-                    </li>
-                    <li class="priceList__item">
-                        <div class="priceItem">
-                            <p class="priceItem__header">Advanced</p>
-                            <p class="priceItem__subheader">Suitable for profession</p>
-                            <p class="priceItem__price">$ 299.<span>99</span></p>
-                            <p class="priceItem__text">
-                                Construction Consulting
-                                Concrete Construction
-                                Design Build
-                                24/7 Customer Support
-                                <span>Home Loan Help</span>
-                            </p>
-                            <button class="btn btn--dark">Sign up</button>
-                        </div>
-                    </li>
-                    <li class="priceList__item">
-                        <div class="priceItem">
-                            <p class="priceItem__header">Enterprise</p>
-                            <p class="priceItem__subheader">Suitable for Corporate</p>
-                            <p class="priceItem__price">$ 499.<span>99</span></p>
-                            <p class="priceItem__text">
-                                Construction Consulting
-                                Concrete Construction
-                                Design Build
-                                24/7 Customer Support
-                                Home Loan Help
-                            </p>
-                            <button class="btn btn--dark">Sign up</button>
-                        </div>
-                    </li>
-                </ul>
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <ul class="priceList">
+                        <li class="priceList__item">
+                            <div class="priceItem">
+                                <p class="priceItem__header">Starter</p>
+                                <p class="priceItem__subheader">Suitable for starter</p>
+                                <p class="priceItem__price">$ 199.<span>99</span></p>
+                                <p class="priceItem__text">
+                                    Construction Consulting
+                                    Concrete Construction
+                                    Design Build
+                                    <span>24/7 Customer Support</span>
+                                    <span>Home Loan Help</span>
+                                </p>
+                                <button class="btn btn--dark">Sign up</button>
+                            </div>
+                        </li>
+                        <li class="priceList__item">
+                            <div class="priceItem">
+                                <p class="priceItem__header">Advanced</p>
+                                <p class="priceItem__subheader">Suitable for profession</p>
+                                <p class="priceItem__price">$ 299.<span>99</span></p>
+                                <p class="priceItem__text">
+                                    Construction Consulting
+                                    Concrete Construction
+                                    Design Build
+                                    24/7 Customer Support
+                                    <span>Home Loan Help</span>
+                                </p>
+                                <button class="btn btn--dark">Sign up</button>
+                            </div>
+                        </li>
+                        <li class="priceList__item">
+                            <div class="priceItem">
+                                <p class="priceItem__header">Enterprise</p>
+                                <p class="priceItem__subheader">Suitable for Corporate</p>
+                                <p class="priceItem__price">$ 499.<span>99</span></p>
+                                <p class="priceItem__text">
+                                    Construction Consulting
+                                    Concrete Construction
+                                    Design Build
+                                    24/7 Customer Support
+                                    Home Loan Help
+                                </p>
+                                <button class="btn btn--dark">Sign up</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
     <section class="news" id="news">
         <div class="container">
             <div class="row">
-                <div class="col-md-offset-3 col-md-6">
+                <div class="col-xs-12 col-sm-12 col-md-offset-3 col-md-6">
                     <p class="news__topText topText">News update</p>
                     <h2 class="news__title">Read <span>recent news</span></h2>
                     <p class="news__text">Dolore magna Quis nostrud exercitation ullamco laboris nisi ut aliquip
@@ -584,8 +785,8 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12">
-                    <ul class="newsList">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <ul class="newsList clearfix">
                         <li class="newsList__item">
                             <div>
                                 <img src="images/news_item_1.jpg" alt="news 1">
@@ -628,12 +829,12 @@
         <div class="contactUs">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-offset-1 col-md-4">
+                    <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-4">
                         <p class="contactUs__title">Send<span> message</span></p>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-offset-1 col-md-10">
+                    <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10">
                         <form action="#">
                             <div>
                                 <input type="text" placeholder="Enter your name..." name="name">
@@ -648,7 +849,7 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-xs-12 col-md-12">
                     <ul class="contactsList">
                         <li class="contactsList__item">
                             <div class="contactsItem">
@@ -687,7 +888,7 @@
     <div class="footer__top">
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-xs-12 col-sm-12 col-md-3">
                     <a href="#" class="footer__logo"></a>
                     <p class="footer__text">
                         It is a long established fact that a readers will be distracted by the readable cotent of a page
@@ -697,7 +898,7 @@
                         is a long established fact that a reader distracted readable content.
                     </p>
                 </div>
-                <div class="col-md-3">
+                <div class="col-xs-12 col-sm-6 col-md-3">
                     <div class="footerServices">
                         <h2>Our services</h2>
                         <ul>
@@ -710,7 +911,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-xs-12 col-sm-6 col-md-3">
                     <div class="footerTweets">
                         <h2>Recent tweets</h2>
                         <ul>
@@ -730,7 +931,7 @@
 
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-xs-12 col-sm-12 col-md-3">
                     <div class="footerContacts">
                         <h2>Get in touch</h2>
                         <div class="office">
